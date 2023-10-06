@@ -2,6 +2,7 @@ import './index.css';
 import React, { useState, useEffect } from 'react';
 import api from '../../services/api';
 import image from '../../images/pokebola.png';
+import imageLupa from '../../images/lupa.png.png'
 
 export default function Home() {
   const [nomePokemon, setNomePokemon] = useState('');
@@ -68,7 +69,7 @@ export default function Home() {
           value={nomePokemon}
           onChange={(e) => setNomePokemon(e.target.value)}
         />
-        <button onClick={handleSearch}>GO</button>
+        <button className='btnLupa' onClick={handleSearch}> <img className="lupa" src={imageLupa} alt="Pokeball" /></button>
         <button className="btnPokebola" onClick={handleRandomPokemon}>
           <img className="pokebola" src={image} alt="Pokeball" />
         </button>
@@ -76,8 +77,11 @@ export default function Home() {
       <div className="card">
         {pokemonData ? (
           <>
+           <div className='classe-pokemon'>
+              <h1>{pokemonData.name}</h1>
+           </div>
             <div className="nome-pokemon">
-              <p>{pokemonData.name}</p>
+              <p>{pokemonData.types.map((item) => item.type.name)}</p>
             </div>
             <div className="container-skills">
               <div className="foto-pokemon">
