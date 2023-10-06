@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #33ae583f;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card{
+    border: 10px solid rgb(255, 255, 255);
+    max-width: 90%;
+    width: 1500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #33ae58;
+    padding: 30px;
+}
+
+.classe-pokemon{
+    background-color: black;
+    max-width: 90%;
+    width: 400px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 14px;
+    color: #fff;
+}
+
+.nome-pokemon{
+    color: #fff;
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+.container-skills{
+   display: flex;
+   justify-content: space-between; /* Ensure it's set to space-between */
+   align-items: center;
+   text-align: center;
+   flex-wrap: wrap;
+   width: 90%;
+   gap: 20px;
+}
+
+.foto-pokemon{
+    border: 5px solid #FFF;
+    border-radius: 100%;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff9a;
+}
+
+.foto-pokemon img{
+    height: 180px;
+    width: 280px;
+}
+
+
+
+.content-skills{
+    
+    color: #fff;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.descricao-pokemon{
+    border: 5px solid #fff;
+    background-color: #AEDFBD;
+    text-align: center;
+    padding: 10px;
+    width: 320px;
+    font-size: 22px;
+}
+
+.descricao-pokemon ul li{
+    text-decoration: none;
+    list-style: none;
+   
+}
+
+.inputs label{
+    font-size: 25px;
+    color: #fff;
+    font-weight: 800;
+}
+
+.inputs{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 14px;
+}
+
+
+.inputs input{
+    padding: 8px;
+    border-radius: 8px;
+    margin-top: 10px;
+    width: 250px;
+    border: none;
+    box-shadow: 0,0,0,0;
+    outline: 0
+}
+
+.inputs button{
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    border-radius: 100%;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+
+}
+
+.notFound{
+    text-align: center;
+    margin: auto;
+}
+
+.notFound p{
+    font-size: 30px;
+    color: red;
+    font-weight: 900;
+}
+
+.pokebola {
+    width: 40px;
+    height: 40px;
+}
+
+@media(max-width: 970px){
+    .container-skills{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
