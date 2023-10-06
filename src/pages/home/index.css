@@ -28,8 +28,8 @@
 
 .classe-pokemon{
     background-color: rgb(8, 118, 10);
-
-    width: 400px;
+    width: 90%;
+    max-width: 400px;
     margin-top: 20px;
     text-align: center;
     font-size: 30px;
@@ -40,7 +40,8 @@
 
 .nome-pokemon{
     background-color: rgb(8, 118, 10);
-    width: 400px;
+    width: 90%;
+    max-width: 400px;
     margin-top: 20px;
     text-align: center;
     font-size: 30px;
@@ -116,9 +117,12 @@
 .inputs{
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-top: 15px;
     padding: 10px;
+    width: 90%;
     border-radius: 14px;
+
 }
 
 
@@ -188,5 +192,11 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+    }
+    .container{
+        height: calc(100vh + 400px);
+    }
+    .classe-pokemon{
+        font-size: 20px;
     }
 }
