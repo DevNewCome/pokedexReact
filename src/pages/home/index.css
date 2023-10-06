@@ -8,7 +8,6 @@
 .container{
     height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
     background-color: #33ae583f;
     flex-direction: column;
@@ -198,5 +197,13 @@
     }
     .classe-pokemon{
         font-size: 20px;
+    }
+
+    .foto-pokemon{
+
+        height: 200px;
+        width: 200px;
+        margin-top: 30px;
+ 
     }
 }
